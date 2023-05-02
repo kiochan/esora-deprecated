@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "name": "esora",
+  "description": "Framework for web visual novel development",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiochan/esora.git"
+  },
+  "keywords": [
+    "visual novel",
+    "game",
+    "web",
+    "typescript"
+  ],
+  "author": {
+    "name": "Kiochan",
+    "email": "kio@kiochan.one",
+    "url": "https://github.com/kiochan"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kiochan/esora/issues"
+  },
+  "homepage": "https://github.com/kiochan/esora#readme",
+  "config": {
+    "commitizen": {
+      "path": "git-cz"
+    }
+  },
+  "workspaces": [
+    "./packages/*"
+  ]
+}
