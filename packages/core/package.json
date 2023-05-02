@@ -1,0 +1,31 @@
+{
+    "name": "@esora/core",
+    "version": "0.0.0",
+    "description": "core package of esora framework",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kiochan/esora.git"
+    },
+    "keywords": [
+        "visual novel",
+        "game",
+        "web",
+        "typescript"
+    ],
+    "author": {
+        "name": "Kiochan",
+        "email": "kio@kiochan.one",
+        "url": "https://github.com/kiochan"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/kiochan/esora/issues"
+    },
+    "homepage": "https://github.com/kiochan/esora#readme",
+    "devDependencies": {
+        "typescript": "^5.0.3"
+    },
+    "scripts": {
+        "build": "tsc -p tsconfig.json"
+    }
+}
