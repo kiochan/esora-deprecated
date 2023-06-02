@@ -1,0 +1,27 @@
+{
+    "name": "@esora/template-typescript",
+    "version": "0.0.0",
+    "description": "typescript template",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kiochan/esora.git"
+    },
+    "keywords": [
+        "template",
+        "typescript"
+    ],
+    "author": {
+        "name": "Kiochan",
+        "email": "kio@kiochan.one",
+        "url": "https://github.com/kiochan"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/kiochan/esora/issues"
+    },
+    "homepage": "https://github.com/kiochan/esora#readme",
+    "scripts": {
+        "build": "tsc -p tsconfig.json",
+        "watch": "tsc -p tsconfig.json -w"
+    }
+}
