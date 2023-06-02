@@ -23,6 +23,7 @@
     },
     "homepage": "https://github.com/kiochan/esora#readme",
     "scripts": {
-        "build": "tsc -p tsconfig.json"
+        "build": "tsc -p tsconfig.json",
+        "watch": "tsc -p tsconfig.json -w"
     }
 }
