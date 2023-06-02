@@ -1,7 +1,16 @@
 {
     "name": "@esora/template-typescript",
-    "version": "0.0.0",
-    "description": "typescript template",
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "require": "./dist/index.js",
+            "import": "./dist/index.mjs",
+            "types": "./dist/index.d.ts"
+        }
+    },
+    "description": "core package of esora framework",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/kiochan/esora.git"
@@ -21,7 +30,7 @@
     },
     "homepage": "https://github.com/kiochan/esora#readme",
     "scripts": {
-        "build": "tsc -p tsconfig.json",
-        "watch": "tsc -p tsconfig.json -w"
+        "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+        "watch": "npm run build -- --watch src"
     }
 }

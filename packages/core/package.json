@@ -1,6 +1,16 @@
 {
     "name": "@esora/core",
     "version": "0.0.0",
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "require": "./dist/index.js",
+            "import": "./dist/index.mjs",
+            "types": "./dist/index.d.ts"
+        }
+    },
     "description": "core package of esora framework",
     "repository": {
         "type": "git",
@@ -23,7 +33,7 @@
     },
     "homepage": "https://github.com/kiochan/esora#readme",
     "scripts": {
-        "build": "tsc -p tsconfig.json",
-        "watch": "tsc -p tsconfig.json -w"
+        "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+        "watch": "npm run build -- --watch src"
     }
 }
