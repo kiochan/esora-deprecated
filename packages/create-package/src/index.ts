@@ -115,7 +115,8 @@ async function main(): Promise<void> {
         templatePath,
         tartgetPath,
         {
-          filter: (fileName) => !ignoreInstance.ignores(cwdRelative(fileName))
+          filter: (fileName) =>
+            !ignoreInstance.ignores(path.relative(cwdRelative(), fileName))
         },
         (error) => {
           if (error != null) {
