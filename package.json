@@ -61,6 +61,7 @@
     "commit:force": "git-cz",
     "format": "prettier --write \"packages/**/src/**/*.ts\"",
     "lint": "eslint packages/**/src/** --ext .ts",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "package:create": "node ./packages/create-package"
   }
 }
