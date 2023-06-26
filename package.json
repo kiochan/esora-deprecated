@@ -60,7 +60,7 @@
     "commit:pre": "npm run format && npm run lint",
     "commit:force": "git-cz",
     "format": "prettier --write \"packages/**/src/**/*.ts\"",
-    "lint": "eslint packages/**/src/** --ext .ts",
+    "lint": "eslint packages/**/src/** --ext .ts --ext .tsx",
     "test": "jest --coverage",
     "package:create": "node ./packages/create-package"
   }
