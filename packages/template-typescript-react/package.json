@@ -1,5 +1,5 @@
 {
-  "name": "@esora/streamer-ui",
+  "name": "@esora/template-typescript-react",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
