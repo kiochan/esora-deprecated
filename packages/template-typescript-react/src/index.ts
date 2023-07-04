@@ -1,3 +1,3 @@
-import StreamerUI from './components/StreamerUI'
+import App from './components/App'
 
-export default StreamerUI
+export default App
