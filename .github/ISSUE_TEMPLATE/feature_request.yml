@@ -1,0 +1,36 @@
+name: Feature Request
+description: Suggest an idea for Esora
+title: '[Feature Request]: '
+labels: 'feature'
+body:
+  - type: checkboxes
+    attributes:
+      label: Preflight Checklist
+      description: Please ensure you've completed all of the following.
+      options:
+        - label: I have read `CONTRIBUTING.md`
+          required: true
+  - type: textarea
+    attributes:
+      label: Problem Description
+      description: Please add a clear, concise description of the problem you would like this feature request to achieve.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Proposed Solution
+      description: Describe your proposed solution in a clear and concise manner.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Alternatives Considered
+      description: A clear and concise description of any alternative solutions or features you have considered.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Additional Information
+      description: Add any additional context about the issue here.
+    validations:
+      required: false
