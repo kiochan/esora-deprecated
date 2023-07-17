@@ -10,7 +10,6 @@ body:
       options:
         - label: I have read `CONTRIBUTING.md`
           required: true
-      options:
         - label: I can reproduce this bug repeatedly.
           required: false
   - type: input
