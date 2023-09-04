@@ -1,0 +1,39 @@
+{
+  "name": "@esora/mocap",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "description": "motion capture library",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiochan/esora.git"
+  },
+  "keywords": [
+    "template",
+    "typescript"
+  ],
+  "author": {
+    "name": "Kiochan",
+    "email": "kio@kiochan.one",
+    "url": "https://github.com/kiochan"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kiochan/esora/issues"
+  },
+  "homepage": "https://github.com/kiochan/esora#readme",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "watch": "npm run build -- --watch src"
+  },
+  "dependencies": {
+    "@mediapipe/tasks-vision": "^0.10.3"
+  }
+}
