@@ -1,5 +1,7 @@
 # esora
 
+![deprecated](https://img.shields.io/badge/deprecated-ff00ff)
+
 Framework for web visual novel development
 
 _This project is still under development and you should **not** enable it in production._
